@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Tanah Air</string>
+    <string name="doni_text1">Hi, adventurer! Welcome to Tanah Air. I’m Doni, here to guide your exploration from the start to the end. Let’s go~</string>
+    <string name="nesi_text1">Congratulations for completing your first exploration!
+
+I’m Nesi and  I’m here to show you how you can get more badges~</string>
+
+    <string name="gudeg_judul">Gudeg</string>
+
+    <string name="gudeg1">Gudeg is a traditional Javanese dish from Yogyakarta and Central Java, Indonesia.
+
+Gudeg is made from young unripe jack fruit stewed for several hours with palm sugar, and coconut milk</string>
+    <string name="gudeg2">Gudeg is traditionally associated with Yogyakarta, and Yogyakarta is sometimes nicknamed "Kota Gudeg" (city of gudeg).
+
+The center of Yogyakarta gudeg restaurants is in the Wijilan area to the east side of the Yogyakarta Sultanate palace.</string>
+
+    <string name="gudeg3">Try gudeg here!</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>
