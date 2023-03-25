@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "404298786139",
+    "project_id": "tanah-air",
+    "storage_bucket": "tanah-air.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:404298786139:android:9e6f2a7b08af412344e67e",
+        "android_client_info": {
+          "package_name": "com.example.tanahair"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "404298786139-u1c38gqjakp8ili86cdqiksb7e24ma05.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDW0_l9OWZH01uZYiLMspp8Q6ftAVfbTqg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "404298786139-u1c38gqjakp8ili86cdqiksb7e24ma05.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

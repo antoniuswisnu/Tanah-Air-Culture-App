@@ -42,7 +42,6 @@ public class DetailAdapter extends PagerAdapter {
         View view = layoutInflater.inflate(R.layout.activity_detail,container,false);
 
         ImageView img = view.findViewById(R.id.img);
-        TextView tv1 = view.findViewById(R.id.tv1);
         TextView tv2 = view.findViewById(R.id.tv2);
         SpringDotsIndicator springDotsIndicator = view.findViewById(R.id.spring_dots_indicator);
 
@@ -50,19 +49,19 @@ public class DetailAdapter extends PagerAdapter {
         {
             case 0:
                 img.setImageResource(R.drawable.gudeg1);
-                tv1.setText(R.string.gudeg_judul);
+
                 tv2.setText(R.string.gudeg1);
                 springDotsIndicator.setVisibility(View.INVISIBLE);
                 break;
             case 1:
                 img.setImageResource(R.drawable.gudeg2);
-                tv1.setText(R.string.gudeg_judul);
+
                 tv2.setText(R.string.gudeg2);
                 springDotsIndicator.setVisibility(View.INVISIBLE);
                 break;
             case 2:
                 img.setImageResource(R.drawable.gudeg3);
-                tv1.setText(R.string.gudeg_judul);
+
                 tv2.setText(R.string.gudeg3);
                 springDotsIndicator.setVisibility(View.INVISIBLE);
                 break;

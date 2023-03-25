@@ -29,7 +29,7 @@ public class SplashScreen extends AppCompatActivity {
         findViewById(R.id.btnReturningUser).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(SplashScreen.this, SignUp2.class));
+                startActivity(new Intent(SplashScreen.this, LoginActivity.class));
             }
         });
 

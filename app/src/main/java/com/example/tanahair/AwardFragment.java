@@ -13,18 +13,13 @@ import android.widget.Button;
 
 public class AwardFragment extends Fragment {
 
-
     public AwardFragment() {
         // Required empty public constructor
     }
 
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-
-
     }
 
     @Override
@@ -40,6 +35,12 @@ public class AwardFragment extends Fragment {
             }
         });
 
+        view.findViewById(R.id.footstep).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getContext(), JogjaActivity.class));
+            }
+        });
 
         return view;
     }
