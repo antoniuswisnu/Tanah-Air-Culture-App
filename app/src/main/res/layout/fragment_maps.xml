@@ -9,6 +9,16 @@
     tools:context=".MapsFragment" >
 
     <ImageView
+        android:id="@+id/lup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/lup"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
         android:id="@+id/footstep"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -17,7 +27,6 @@
         android:background="@drawable/footstep"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
-
 
 </fragment>
 

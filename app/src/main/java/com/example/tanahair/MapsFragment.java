@@ -19,6 +19,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 public class MapsFragment extends Fragment {
 
+
     private OnMapReadyCallback callback = new OnMapReadyCallback() {
 
         @Override
@@ -36,6 +37,12 @@ public class MapsFragment extends Fragment {
                              @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_maps, container, false);
 
+        view.findViewById(R.id.lup).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getContext(), CultureActivity.class));
+            }
+        });
         view.findViewById(R.id.footstep).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
