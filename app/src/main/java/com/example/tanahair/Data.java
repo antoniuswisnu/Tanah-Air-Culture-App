@@ -34,6 +34,7 @@ public class Data {
             cultures.setNama(nama[i]);
             cultures.setDeskripsi(deskripsi[i]);
             cultures.setPhoto(photo[i]);
+            list.add(cultures);
         }
         return list;
     }
