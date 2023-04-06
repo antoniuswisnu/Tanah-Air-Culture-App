@@ -28,5 +28,12 @@ The center of Yogyakarta gudeg restaurants is in the Wijilan area to the east si
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
 
+    <string name="temperature_text">%1$.2f</string>
+    <string name="humidity_text">%1$.2f</string>
+    <string name="light_text">%1$.2f</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="app_widget_description">This is an app widget description</string>
+
 
 </resources>

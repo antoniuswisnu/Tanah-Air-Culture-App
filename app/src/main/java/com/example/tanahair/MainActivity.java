@@ -25,12 +25,11 @@ public class MainActivity extends AppCompatActivity {
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-//        replaceFragment(new MapsFragment());
 
         binding.bottomNavigationView.setOnItemSelectedListener(item ->{
             switch (item.getItemId()){
                 case R.id.map:
-                    replaceFragment(new MapsFragment());
+                    replaceFragment(new ReadyMapFragment());
                     break;
                 case R.id.award:
                     replaceFragment(new AwardFragment());
@@ -56,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item){
         switch (item.getItemId()){
             case R.id.map:
-                replaceFragment(new MapsFragment());
+                replaceFragment(new ReadyMapFragment());
                 break;
             case R.id.award:
                 replaceFragment(new AwardFragment());
