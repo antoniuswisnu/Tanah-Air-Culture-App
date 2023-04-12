@@ -27,7 +27,7 @@
         android:textSize="28sp"
         android:backgroundTint="#9DC940"
         android:textColor="#212121"
-        android:text="Returning User"
+        android:text="@string/returning_user"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
@@ -39,7 +39,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="24dp"
-        android:text="New User"
+        android:text="@string/new_user"
         android:fontFamily="@font/grandstander"
         android:textSize="28sp"
         android:backgroundTint="#9DC940"

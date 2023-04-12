@@ -40,7 +40,6 @@
         android:text="@string/doni_text1"
         android:textColor="#212121"
         android:textSize="20sp"
-
         android:translationZ="1dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

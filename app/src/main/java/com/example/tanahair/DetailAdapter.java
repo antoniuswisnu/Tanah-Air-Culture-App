@@ -1,15 +1,11 @@
 package com.example.tanahair;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.PagerAdapter;
-
 import android.content.Context;
-import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -22,7 +18,6 @@ public class DetailAdapter extends PagerAdapter {
     public DetailAdapter(Context ctx) {
         this.ctx = ctx;
     }
-
 
     @Override
     public int getCount() {

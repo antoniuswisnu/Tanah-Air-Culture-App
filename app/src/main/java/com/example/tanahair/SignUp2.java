@@ -2,17 +2,14 @@ package com.example.tanahair;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
-
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -20,7 +17,6 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class SignUp2 extends AppCompatActivity {
 
-    Button btnSignUp;
     private ProgressBar progressbar;
 
     EditText etNama, etEmail, etPassword;
@@ -50,16 +46,12 @@ public class SignUp2 extends AppCompatActivity {
 
     private void registerNewUser()
     {
-
-        // show the visibility of progress bar to show loading
         progressbar.setVisibility(View.VISIBLE);
 
-        // Take the value of two edit texts in Strings
         String email, password;
         email = etEmail.getText().toString();
         password = etPassword.getText().toString();
 
-        // Validations for input email and password
         if (TextUtils.isEmpty(email)) {
             Toast.makeText(getApplicationContext(),
                             "Please enter email!!",
@@ -75,7 +67,6 @@ public class SignUp2 extends AppCompatActivity {
             return;
         }
 
-        // create new user or register new user
         mAuth
                 .createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
@@ -89,10 +80,8 @@ public class SignUp2 extends AppCompatActivity {
                                             Toast.LENGTH_LONG)
                                     .show();
 
-                            // hide the progress bar
                             progressbar.setVisibility(View.GONE);
 
-                            // if the user created intent to login activity
                             Intent intent
                                     = new Intent(SignUp2.this,
                                     WelcomeNotif.class);
@@ -100,7 +89,6 @@ public class SignUp2 extends AppCompatActivity {
                         }
                         else {
 
-                            // Registration failed
                             Toast.makeText(
                                             getApplicationContext(),
                                             "Registration failed!!"
@@ -108,7 +96,6 @@ public class SignUp2 extends AppCompatActivity {
                                             Toast.LENGTH_LONG)
                                     .show();
 
-                            // hide the progress bar
                             progressbar.setVisibility(View.GONE);
                         }
                     }

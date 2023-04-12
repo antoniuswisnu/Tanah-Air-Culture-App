@@ -2,7 +2,6 @@ package com.example.tanahair;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -11,7 +10,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
-
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -47,16 +45,12 @@ public class LoginActivity extends AppCompatActivity {
 
     private void loginUserAccount()
     {
-
-        // show the visibility of progress bar to show loading
         progressbar.setVisibility(View.VISIBLE);
 
-        // Take the value of two edit texts in Strings
         String email, password;
         email = etEmail.getText().toString();
         password = etPassword.getText().toString();
 
-        // validations for input email and password
         if (TextUtils.isEmpty(email)) {
             Toast.makeText(getApplicationContext(),
                             "Please enter email!!",
@@ -73,7 +67,6 @@ public class LoginActivity extends AppCompatActivity {
             return;
         }
 
-        // signin existing user
         mAuth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener(
                         new OnCompleteListener<AuthResult>() {
@@ -87,11 +80,8 @@ public class LoginActivity extends AppCompatActivity {
                                                     Toast.LENGTH_LONG)
                                             .show();
 
-                                    // hide the progress bar
                                     progressbar.setVisibility(View.GONE);
 
-                                    // if sign-in is successful
-                                    // intent to home activity
                                     Intent intent
                                             = new Intent(LoginActivity.this,
                                             WelcomeNotif.class);
@@ -99,14 +89,10 @@ public class LoginActivity extends AppCompatActivity {
                                 }
 
                                 else {
-
-                                    // sign-in failed
                                     Toast.makeText(getApplicationContext(),
                                                     "Login failed!!",
                                                     Toast.LENGTH_LONG)
                                             .show();
-
-                                    // hide the progress bar
                                     progressbar.setVisibility(View.GONE);
                                 }
                             }

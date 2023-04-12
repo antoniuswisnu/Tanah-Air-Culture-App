@@ -3,6 +3,16 @@ package com.example.tanahair;
 public class Cultures {
 
     private String nama;
+    private String rating;
+
+    public String getRating() {
+        return rating;
+    }
+
+    public void setRating(String rating) {
+        this.rating = rating;
+    }
+
     private String deskripsi;
     private int photo;
 

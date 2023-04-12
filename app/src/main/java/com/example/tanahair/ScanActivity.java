@@ -2,9 +2,7 @@ package com.example.tanahair;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.camera.core.Camera;
 import androidx.camera.core.CameraSelector;
 import androidx.camera.core.ImageAnalysis;
@@ -14,18 +12,14 @@ import androidx.camera.view.PreviewView;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.lifecycle.LifecycleOwner;
-
 import android.Manifest;
 import android.content.pm.PackageManager;
-import android.os.Bundle;
 import android.util.Log;
 import android.util.Size;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
-
 import com.google.common.util.concurrent.ListenableFuture;
-
 import java.util.concurrent.ExecutionException;
 
 

@@ -16,7 +16,6 @@ The center of Yogyakarta gudeg restaurants is in the Wijilan area to the east si
 
     <string name="gudeg3">Try gudeg here!</string>
     <string name="title_activity_maps">MapsActivity</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_login">LoginActivity</string>
     <string name="prompt_email">Email</string>
@@ -34,6 +33,59 @@ The center of Yogyakarta gudeg restaurants is in the Wijilan area to the east si
     <string name="appwidget_text">EXAMPLE</string>
     <string name="add_widget">Add widget</string>
     <string name="app_widget_description">This is an app widget description</string>
+    <string name="congratulations">Congratulations</string>
+    <string name="award_desc">for completing your first exploration!</string>
+    <string name="go_home">GO HOME</string>
+    <string name="todo">TODO</string>
+    <string name="culture_in_your_area">Culture in your area</string>
+    <string name="e_mail">E-Mail</string>
+    <string name="password">Password</string>
+    <string name="login">LOGIN</string>
+    <string name="qr_code_found">QR Code Found</string>
+    <string name="adventurer_text">If you are here to explore and learn about Indonesia’s cultural heritage, be an adventurer!</string>
+    <string name="adventurer">ADVENTURER</string>
+    <string name="merchant_text">If you are here to help promote and educate people through your skills and expertise, be a merchant!</string>
+    <string name="merchant">MERCHANT</string>
+    <string name="name">Name</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="dialog_1">This is where your journey will begin</string>
+    <string name="dialog_2">Don\'t worry, i always be here with you</string>
+    <string name="returning_user">Returning User</string>
+    <string name="new_user">New User</string>
+    <string name="location">Yogyakarta, Indonesia</string>
+    <string name="humidity">Humidity</string>
+    <string name="temperature">Temperature</string>
+    <string name="light">Light</string>
+    <string name="today">Today</string>
+    <string name="next_7_days">Next 7 Days</string>
+    <string name="scan_qr">Scan QR</string>
+    <string name="let_s_start">Let\'s Start</string>
+    <string name="weather">Weather</string>
+    <string name="role">Role :</string>
+    <string name="profile">Profile</string>
+    <string name="logout">Logout</string>
+    <string name="normal_map">Normal Map</string>
+    <string name="satelite_map">Satelite Map</string>
+    <string name="terrain_map">Terrain Map</string>
+    <string name="hybrid_map">Hybrid Map</string>
+    <string name="award">Award</string>
+    <string name="map">Map</string>
+    <string name="user">User</string>
+    <string name="heading">Heading: 0.0</string>
+    <string name="award2">This is your collection awards</string>
+    <string name="tanah_air2">Hello, Welcome to Tanah Air App</string>
+    <string name="news">News</string>
+    <string name="see_all">See all</string>
+    <string name="tools">Tools</string>
+    <string name="favorite_place">Favorite Place</string>
+    <string name="compass">Compass</string>
+    <string name="currency">Currency</string>
+    <string name="news1">The Beautiful of Bali</string>
+    <string name="news_desc1">Bali is a province of Indonesia and the westernmost of the Lesser Sunda Islands...</string>
+    <string name="news2">The Secret of Lombok</string>
+    <string name="news_desc2">Lombok is an Indonesian island east of Bali and west of Sumbawa, part of the Lesser Sunda Island chain...</string>
+    <string name="news_desc3">Komodo island, part of the Lesser Sunda chain of Indonesian islands, is the rugged ...</string>
+    <string name="news3">Komodo Island</string>
 
 
 </resources>

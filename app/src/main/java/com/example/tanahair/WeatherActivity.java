@@ -1,7 +1,6 @@
 package com.example.tanahair;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
@@ -9,6 +8,8 @@ import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import java.text.DateFormat;
+import java.util.Date;
 import java.util.List;
 
 public class WeatherActivity extends AppCompatActivity implements SensorEventListener {
@@ -45,6 +46,11 @@ public class WeatherActivity extends AppCompatActivity implements SensorEventLis
         mlightSensor = mSensorManager.getDefaultSensor(Sensor.TYPE_LIGHT);
         mHumiditySensor = mSensorManager.getDefaultSensor(Sensor.TYPE_RELATIVE_HUMIDITY);
         mTemperatureSensor = mSensorManager.getDefaultSensor(Sensor.TYPE_AMBIENT_TEMPERATURE);
+
+        Date myDate = new Date();
+        String formatDate = DateFormat.getDateInstance().format(myDate);
+        TextView tvDate = findViewById(R.id.tvDate);
+        tvDate.setText(formatDate);
     }
 
     @Override

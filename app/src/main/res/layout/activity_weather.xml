@@ -9,7 +9,7 @@
     >
 
     <TextView
-        android:id="@+id/textView13"
+        android:id="@+id/tvDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -27,18 +27,18 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="4dp"
         android:fontFamily="@font/grandstander_bold"
-        android:text="Yogyakarta, Indonesia"
+        android:text="@string/location"
         android:textColor="#fafafa"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+        app:layout_constraintTop_toBottomOf="@+id/tvDate" />
 
     <ImageView
         android:id="@+id/imageView10"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="70dp"
         android:src="@drawable/cloud"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -48,7 +48,7 @@
         android:id="@+id/textView14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="220dp"
+        android:layout_marginTop="180dp"
         android:fontFamily="@font/grandstander_bold"
         android:text="23"
         android:textColor="#FAFAFA"
@@ -57,13 +57,26 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/grandstander_bold"
+        android:text="\u2103"
+        android:textColor="#FAFAFA"
+
+        android:textSize="40sp"
+        app:layout_constraintStart_toEndOf="@+id/textView14"
+        app:layout_constraintTop_toTopOf="@+id/textView14" />
+
     <!-- Mid -->
+
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="190dp"
+        android:layout_marginTop="140dp"
         android:layout_marginEnd="32dp"
         app:cardCornerRadius="8dp"
         app:cardElevation="8dp"
@@ -108,7 +121,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
                 android:fontFamily="@font/grandstander"
-                android:text="Humidity"
+                android:text="@string/humidity"
                 android:textSize="16sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/humidity" />
@@ -143,7 +156,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/grandstander"
-                android:text="Temperature"
+                android:text="@string/temperature"
                 android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -180,7 +193,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="16dp"
                 android:fontFamily="@font/grandstander"
-                android:text="Light"
+                android:text="@string/light"
                 android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/textView16"
@@ -211,7 +224,7 @@
             android:layout_marginStart="32dp"
             android:layout_marginTop="56dp"
             android:fontFamily="@font/grandstander_bold"
-            android:text="Today"
+            android:text="@string/today"
             android:textSize="24sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -223,7 +236,7 @@
             android:layout_marginStart="120dp"
             android:layout_marginTop="56dp"
             android:fontFamily="@font/grandstander_bold"
-            android:text="Next 7 Days"
+            android:text="@string/next_7_days"
             android:textColor="#6BA5F1"
             android:textSize="24sp"
             app:layout_constraintEnd_toEndOf="parent"

@@ -27,7 +27,6 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ListViewHolder
         this.listCultures = list;
     }
 
-
     @NonNull
     @Override
     public ListAdapter.ListViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -40,10 +39,10 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ListViewHolder
         final Cultures culture = listCultures.get(position);
         Glide.with(holder.itemView.getContext())
                 .load(culture.getPhoto())
-                .apply(new RequestOptions().override(55, 55))
+                .apply(new RequestOptions().override(380, 250))
                 .into(holder.photo);
         holder.nama.setText(culture.getNama());
-        holder.deskripsi.setText(culture.getDeskripsi());
+        holder.rating.setText(culture.getRating());
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,6 +52,7 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ListViewHolder
                 Bundle bundle = new Bundle();
 
                 bundle.putString("name", culture.getNama());
+                bundle.putString("rating", culture.getRating());
                 bundle.putString("description", culture.getDeskripsi());
                 bundle.putInt("picture", culture.getPhoto());
                 intent.putExtras(bundle);
@@ -69,13 +69,13 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ListViewHolder
     }
 
     public class ListViewHolder extends RecyclerView.ViewHolder{
-        TextView nama, deskripsi;
+        TextView nama, rating;
         ImageView photo;
         public ListViewHolder(@NonNull View itemView) {
             super(itemView);
             context = itemView.getContext();
             nama = itemView.findViewById(R.id.nama);
-            deskripsi = itemView.findViewById(R.id.deskripsi);
+            rating = itemView.findViewById(R.id.rating);
             photo = itemView.findViewById(R.id.photo);
 
         }

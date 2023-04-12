@@ -1,69 +1,108 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     style="@style/Widget.TanahAir.AppWidget.Container"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="#80C9FE"
     android:theme="@style/Theme.TanahAir.AppWidgetContainer">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/section_id"
-        android:orientation="horizontal"
-        android:background="@color/white"
-        >
-        <TextView
+        <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/appwidget_label"
-            android:textColor="@color/black"
-            android:text="WIDGET ID : "
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:layout_weight="2"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/appwidget_id"
-            android:textColor="@color/black"
-            android:layout_weight="1"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            />
-    </LinearLayout>
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            >
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/grandstander_bold"
+                android:text="Sunny"
+                android:textColor="#FAFAFA"
+                android:textSize="18sp"
+                 />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:id="@+id/section_update"
-        android:layout_below="@+id/section_id"
-        android:background="@color/white"
-        >
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Last Updated"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:textColor="@color/black"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/appwidget_update"
-            android:textColor="@color/black"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            />
-    </LinearLayout>
+            <TextView
+                android:id="@+id/temperatureTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/grandstander"
+                android:text="25 \u2103"
+                android:textColor="#FAFAFA"
+                android:textSize="36sp"
+                />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/section_update"
-        android:text="UPDATE NOW"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/update_btn"
-        />
-</RelativeLayout>
+            <TextView
+                android:id="@+id/date_widget"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:fontFamily="@font/grandstander"
+                android:text="7 April 2023"
+                android:textColor="#FAFAFA"
+                />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginStart="24dp"
+                >
+
+                <ImageView
+                    android:id="@+id/imageView14"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/cloud"
+                    />
+
+                <Button
+                    android:id="@+id/btnWeather"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:backgroundTint="#6BA5F1"
+                    android:text="weather"
+                    />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginStart="16dp"
+
+                >
+
+                <ImageView
+                    android:id="@+id/imageView15"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+
+                    android:src="@drawable/world"
+                    />
+
+                <Button
+                    android:id="@+id/btnMap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:backgroundTint="#1FCCA4"
+                    android:text="Map"
+                    />
+
+
+            </LinearLayout>
+
+
+
+
+</LinearLayout>

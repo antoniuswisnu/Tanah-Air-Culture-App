@@ -4,30 +4,44 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AwardFragment"
     android:background="#D3EAF1"
-    >
+    tools:context=".AwardFragment">
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="30dp"
-        android:rotation="180"
-        android:src="@drawable/arrow"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/award"
+        android:textSize="28sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/award2"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
     <SearchView
         android:id="@+id/searchView"
-        android:layout_width="310dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
         android:background="#FAFAFA"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView4"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
 
     <Button
         android:id="@+id/btnScan"
@@ -38,7 +52,7 @@
         android:layout_marginEnd="24dp"
         android:backgroundTint="#EEC97B"
         android:fontFamily="@font/grandstander"
-        android:text="Scan QR"
+        android:text="@string/scan_qr"
         android:textColor="#212121"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -48,7 +62,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="270dp"
         android:background="@drawable/bg_putih"
         app:layout_constraintTop_toBottomOf="@+id/btnScan">
 

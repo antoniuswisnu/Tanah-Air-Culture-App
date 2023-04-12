@@ -11,6 +11,15 @@ public class Data {
             "Taman Sari"
     };
 
+    private static String[] rating = {
+            "4.7",
+            "3.8",
+            "4.9",
+            "4.3",
+            "4.6"
+    };
+
+
     private static String[] deskripsi = {
         "Yogyakarta (often called “Jogja”) is a city on the Indonesian island of Java known for its traditional arts and cultural heritage. Its ornate 18th-century royal complex, or kraton, encompasses the still-inhabited Sultan’s Palace. Also within the kraton are numerous open-air pavilions that host classical Javanese dance shows and concerts of gamelan music, characterized by gongs, chimes and plucked string instruments. ",
             "Jalan Malioboro is a major shopping street in Yogyakarta, Indonesia; the name is also used more generally for the neighborhood around the street. It lies north–south axis in the line between Yogyakarta Kraton and Mount Merapi",
@@ -32,6 +41,7 @@ public class Data {
         for(int i = 0; i < nama.length; i++){
             Cultures cultures = new Cultures();
             cultures.setNama(nama[i]);
+            cultures.setRating(rating[i]);
             cultures.setDeskripsi(deskripsi[i]);
             cultures.setPhoto(photo[i]);
             list.add(cultures);
